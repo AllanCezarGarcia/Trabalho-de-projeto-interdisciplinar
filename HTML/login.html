@@ -1,0 +1,144 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/comum.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="../JS/script.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="./index.html">MATIFRJ</a>
+                </div>
+                <div id="user">
+                    <img src="./foto-teste.jfif" id="user_avatar" alt="Avatar">
+                    <p id="user_infos">
+                        <span class="item-description">
+                            Allan
+                        </span>
+                        <span class="item-description">
+                            TI-305
+                        </span>
+                    </p>
+                </div>
+                
+                <ul class="sidebar-nav">
+                    
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-user"></i>
+                            Perfil
+                        </a>
+                    </li>     
+                    
+                    <li class="sidebar-item">
+                        <a href="./atividades.html" class="sidebar-link">
+                            <i class="fa-solid fa-book-open"></i>
+                            Atividades
+                        </a>
+                    </li>     
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-gear"></i>
+                            Configurações
+                        </a>
+                    </li>     
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-bell"></i>
+                            Notificações
+                        </a>
+                    </li>     
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">
+                            <i class="fa-solid fa-box"></i>
+                            Preparatorio
+                        </a>
+                    </li>     
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#anos"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Anos
+                        </a>
+                        <ul id="anos" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">1 ano</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">2 ano</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">3 ano</a>
+                            </li>
+                        </ul>
+                    </li>    
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse" data-bs-target="#autenticar"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-square-check"></i> 
+                            Autenticar
+                        </a>
+                        <ul id="autenticar" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Login</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#" class="sidebar-link">Registro</a>
+                            </li>
+                        </ul>
+                    </li>    
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+                <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" type="button" data-bs-theme="dark">
+                    <i class="fa-solid fa-bars"></i>    
+                </button>
+            </nav> 
+    <div class="principal">
+        <div class="esquerda">
+            <h1>Bem vindo ao <br> MATIFRJ</h1>
+            <img src="../svg/mathematics-animate.svg" class="imagem" alt="noel">
+        </div>
+        <div class="direita">
+            <form class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="nome">Email</label>
+                    <input type="email" name="nome" placeholder="example@gmail.com" required>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha" required>
+                </div>
+                <button type="submit" class="submit">Login</button>
+                <p class="footer">Não possui conta? <a href="registro.html" class="link">Por favor, registre-se</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

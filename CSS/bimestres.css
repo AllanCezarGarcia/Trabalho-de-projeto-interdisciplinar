@@ -1,0 +1,27 @@
+.conteudos>li{
+    list-style: bullets;
+}
+.linha-titulo {
+    height: 25vh;
+}
+.card{
+    margin-top: 10px;
+    height: 40vh;
+    border:solid 2px #008004;
+}
+.titulo {
+    text-align: center;
+    font-weight: bold;
+    
+}
+.titulo>h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+}
+@media (max-width:768px) {
+    .titulo>h1 {
+        font-size: 3.3rem;
+    
+    }
+}
